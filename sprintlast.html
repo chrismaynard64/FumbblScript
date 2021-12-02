@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Black Box Sprint</title>
+     <link href="default.css" type="text/css" rel="stylesheet" id="defaultcss"/>
+   
+     <script type="text/javascript" src="jquery-1.6.min.js"></script>         
+     <script type="text/javascript" src="jquery.query-2.1.7.js"></script>   
+ 
+     <script type="text/javascript"></script>    
+     <script type="text/javascript" src="js/sprint.js"></script>    
+    
+</head>
+<body>
+   <div>
+      <div>
+        <table cellspacing="0" align="center" cellpadding="4" rules="all" border="0" id="GridView1" style="border-collapse:collapse;">
+          <tr>
+            <td colspan="10" align="center">
+           
+            <table border="0" align="center">
+                <tr>
+                  <td>
+                    <a href="http://fumbbl.com/FUMBBL.php?page=group&amp;op=view&amp;group=7383">
+                           Home Page</a>
+                  </td>
+                  <td>|</td>
+                  <td>
+                    <a href="sprint.html?sprintId=302">Human Premiership</a>
+                  </td>
+                 <!--   <td>|</td>
+               
+                  <td>
+                    <a href="images.html">Images</a>
+                  </td>
+                  <td>|</td>
+                   <td>
+                    <a href="https://fumbbl.com/FUMBBL.php?page=group&op=view&group=7875">Hall of Fame</a>
+                  </td>
+                  <td>|</td>   --> 
+                  </tr><tr>
+                         </table>
+           
+            </td>
+          </tr>
+          <tr>
+            <td colspan="10">
+              <table border="0" width="100%">
+                <tr>
+                  <td> 
+
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <img id="imgLogo" src="http://www.maproom.co.uk/0.gif" />
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2">
+                    <h2 id="h2Head"></h2>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left">
+                          Season runs from  <span id="spFromDate"></span> to <span id="spToDate"></span></td>
+                  <td align="right">
+                         Last updated <span id="spUpdated"></span> </td>
+                </tr>
+                <tr>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="2"><span id="tdMessage"></span><br />
+                       <span id="Span1">   (Win =  <span id="spWin"></span>pts, draw = <span id="spDraw"></span>, loss = <span id="spLoss"></span>)</span>
+                      </td>
+                </tr>
+                <tr>
+                  <td> </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td colspan="10">
+                  <select id="ddSprint" name="ddSprint">
+ 
+                    <option value="308">The Last Slobberknocker</option>                      
+
+
+                    <option value="302">Human League Prem Aug/Sep 2019</option>
+                    <option value="303">Human League Conf Aug/Sep 2019</option>
+
+                    <option value="296">Human League Prem Jun/Jul 2019</option>
+                    <option value="297">Human League Conf Jun/Jul 2019</option>
+
+                    <option value="290">Human League Prem Apr/May 2019</option>
+                    <option value="291">Human League Conf Apr/May 2019</option>
+
+                    <option value="284">Human League Prem Feb/Mar 2019</option>
+                    <option value="285">Human League Conf Feb/Mar 2019</option>
+
+                    <option value="278">Human League Prem Dec/Jan 2018/19</option>
+                    <option value="279">Human League Conf Dec/Jan 2018/19</option>
+
+                    <option value="272">Human League Prem Oct/Nov 2018</option>
+                    <option value="273">Human League Conf Oct/Nov 2018</option>
+
+                    <option value="266">Human League Prem Aug/Sep 2018</option>
+                    <option value="267">Human League Conf Aug/Sep 2018</option>
+
+                    <option value="260">Human League Prem May/Jun 2018</option>
+                    <option value="261">Human League Conf May/Jun 2018</option>
+ 
+                    <option value="254">Human League Prem Apr/May 2018</option>
+                    <option value="255">Human League Conf Apr/May 2018</option>
+ 
+                    <option value="248">Human League Prem Feb/Mar 2018</option>
+                    <option value="249">Human League Conf Feb/Mar 2018</option>
+                   
+                    <option value="242">Human League Prem Dec/Jan 2017/2018</option>
+                    <option value="243">Human League Conf Dec/Jan 2017/2018</option>
+
+ 
+                    <option value="236">Human League Prem Oct/Nov 2017</option>
+                    <option value="237">Human League Conf Oct/Nov 2017</option>
+             
+                    <option value="230">Human League Prem Aug/Sep 2017</option>
+                    <option value="231">Human League Conf Aug/Sep 2017</option>
+
+                     <option value="229">Secret League     Jun/Jul 2017</option>                                                          
+   
+                      <option value="224">Human League Prem Jun/Jul 2017</option>
+                      <option value="225">Human League Conf Jun/Jul 2017</option>
+ 
+                      <option value="218">Human League Prem Apr/May 2017</option>
+                      <option value="219">Human League Conf Apr/May 2017</option>
+
+                      <option value="212">Human League Prem Feb/Mar 2017</option>
+                      <option value="213">Human League Conf Feb/Mar 2017</option>
+
+                      <option value="206">Human League Prem Dec/Jan 2016/17</option>
+                      <option value="207">Human League Conf Dec/Jan 2016/17</option>
+
+                      <option value="200">Human League Prem Oct/Nov 2016</option>
+                      <option value="201">Human League Conf Oct/Nov 2016</option>
+
+                      <option value="194">Human League Prem Aug/Sep 2016</option>
+                      <option value="195">Human League Conf Aug/Sep 2016</option>
+
+                      <option value="187">Human League Prem Jun/Jul 2016</option>
+                      <option value="188">Human League Conf Jun/Jul 2016</option>
+
+                      <option value="182">Human League Prem Apr/May 2016</option>
+                      <option value="183">Human League Conf Apr/May 2016</option>
+
+                      <option value="177">Human League Prem Feb/Mar 2016</option>
+                      <option value="178">Human League Conf Feb/Mar 2016</option>
+
+                      <option value="172">Human League Prem Dec/Jan 2015/16</option>
+                      <option value="173">Human League Conf Dec/Jan 2015/16</option>
+
+                      <option value="167">Human League Prem Oct/Nov 2015</option>
+                      <option value="168">Human League Conf Oct/Nov 2015</option>
+
+                      <option value="162">Human League Prem Aug/Sep 2015</option>
+                      <option value="163">Human League Conf Aug/Sep 2015</option>
+
+                      <option value="157">Human League Prem Jun/Jul 2015</option>
+                      <option value="158">Human League Conf Jun/Jul 2015</option>
+
+                      <option value="152">Human League Prem Apr/May 2015</option>
+                      <option value="153">Human League Conf Apr/May 2015</option>
+
+                      <option value="147">Human League Prem Feb/Mar 2015</option>
+                      <option value="148">Human League Conf Feb/Mar 2015</option>
+
+                      <option value="141">Human League Prem Dec/Jan 2014/15</option>
+                      <option value="142">Human League Conf Dec/Jan 2014/15</option>
+
+                      <option value="134">Human League Prem  Oct/Nov</option>
+                      <option value="135">Human League Conf  Oct/Nov</option>
+                      <option value="138">Ranked Sprint  Oct/Nov</option>
+
+                      <option value="128">Human League Prem Aug/Sep</option>
+                      <option value="129">Human League Conf Aug/Sep</option>
+
+                      <option value="122">Human League Prem Jun/Jul</option>
+                      <option value="123">Human League Conf Jun/Jul</option>
+
+                      <option value="116">Human League Prem Apr/May</option>
+                      <option value="117">Human League Conf Apr/May</option>
+ 
+                      <option value="111">Human League Prem Feb/Mar</option>
+                      <option value="112">Human League Conf Feb/Mar</option>
+
+                      <option value="104">Human League Prem Dec/Feb</option>
+                      <option value="105">Human League Conf Dec/Jan</option>
+
+                      <option value="98">Human League Prem Oct/Nov</option>
+                      <option value="99">Human League Conf Oct/Nov</option>
+
+                      <option value="90">Human League Prem Aug/Sep</option>
+                      <option value="91">Human League Conf Aug/Sep</option>
+
+                      <option value="84">Human League Prem Jun/Jul</option>
+                      <option value="85">Human League Conf Jun/Jul</option>
+
+                      <option value="78">Human League Prem Apr/May</option>
+                      <option value="79">Human League Conf Apr/May</option>
+
+                      <option value="71">Human League Prem Feb/Mar</option>
+                      <option value="72">Human League Conf Feb/Mar</option>
+
+                      <option value="64">Human League Prem Dec/Jan</option>
+                      <option value="65">Human League Conf Dec/Jan</option>
+
+                      <option value="57">Human League Prem Oct/Nov</option>
+                      <option value="58">Human League Conf Oct/Nov</option>
+
+                      <option value="48">Human League Prem Aug/Sept</option>
+                      <option value="49">Human League Conf Aug/Sept</option>
+
+                      <option value="40">Human League Prem Jun/Jul</option>
+                      <option value="41">Human League Conf Jun/Jul</option>
+
+                      <option value="34">Human League Prem Apr/May</option>
+                      <option value="35">Human League Conf Apr/May</option>
+
+                      <option value="28">Human League Prem Feb/Mar</option>
+                      <option value="29">Human League Conf Feb/Mar</option>
+
+                      <option value="22">Human League Prem Dec/Jan</option>
+                      <option value="23">Human League Conf Dec/Jan</option>
+
+                      <option value="18">Human League Prem Oct/Nov</option>
+
+                      <option value="12">Premiership (season 2)</option>
+                      <option value="13">Conference (season 2)</option>
+
+                      <option value="8">Premiership (season 1)</option>
+                      <option value="9">Conference (season 1)</option>
+
+                      <option value="2">Premiership (Pre season)</option>
+                      <option value="3">Conference (Pre season)</option>
+
+                  </select>  
+
+                    <select id="ddRace" name="ddRace">
+<option value="-1">All</option>
+<option value="-3">Agile</option>
+<option value="-5">Bash</option>
+<option value="-2">Hybrid</option>
+
+<option value="-4">Stunty/Ogres</option>
+<option value="1">Amazon</option>
+<option value="2">Chaos</option>
+<option value="3">Chaos Dwarf</option>
+<option value="64">Chaos Pact</option>
+
+<option value="4">Dark Elves</option>
+<option value="5">Dwarf</option>
+<option value="24">Elf</option>
+
+<option value="6">Goblin</option>
+<option value="7">Halfling</option>
+<option value="8">High Elf</option>
+<option value="9">Human</option>
+<option value="16">Khemri</option>
+
+<option value="10">Lizardmen</option>
+<option value="17">Necromantic</option>
+<option value="11">Norse</option>
+<option value="19">Nurgle</option>
+
+<option value="12">Orc</option>
+<option value="23">Ogre</option>
+<option value="13">Skaven</option>
+<option value="65">Slann</option>
+
+<option value="14">Undead</option>
+<option value="66">Underworld</option>
+
+<option value="18">Vampire</option>
+<option value="15">Wood Elf</option>
+
+</select>  
+
+<button id="getSprint">Get Sprint</button>         
+          
+          </td></tr>
+          <tr>
+          <td colspan="10">
+          <table id="tblGrid"  width="100%" border="1"  cellpadding="4" style="border-collapse:collapse;">
+
+          </table>
+</td>
+</tr>
+</table>
+      </div>
+    </div>
+
+</body>
+</html>
+                                                               
+                                                           
+

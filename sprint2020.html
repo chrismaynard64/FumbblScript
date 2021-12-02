@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Black Box Sprint</title>
+  <link href="default.css" type="text/css" rel="stylesheet" id="defaultcss" />
+
+  <script type="text/javascript" src="jquery-1.6.min.js"></script>
+  <script type="text/javascript" src="jquery.query-2.1.7.js"></script>
+
+  <script type="text/javascript"></script>
+  <script type="text/javascript" src="js/sprint2020.js"></script>
+
+</head>
+
+<body>
+  <div>
+    <div>
+      <table cellspacing="0" align="center" cellpadding="4" rules="all" border="0" id="GridView1"
+        style="border-collapse:collapse;">
+        <tr>
+          <td colspan="10" align="center">
+
+            <table border="0" align="center">
+              <tr>
+                <td>
+                  <a href="http://fumbbl.com/FUMBBL.php?page=group&amp;op=view&amp;group=14708">
+                    [SL]2020 Home Page</a>
+                </td>
+                <td>|</td>
+                <td>
+                  <a href="sprint2020.html?sprintId=313">[SL]2020 Open</a>
+                </td>
+                <td>|</td>
+
+                <td>
+                  <a href="matches2020.html?sprintId=313&type=big">[SL]2020 Recent Matches</a>
+                </td>
+
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://fumbbl.com/FUMBBL.php?page=group&amp;op=view&amp;group=10263">
+                    [SL]2016 Home Page</a>
+                </td>
+                <td>|</td>
+                <td>
+                  <a href="sprint2020.html?sprintId=312">[SL]2016 Open</a>
+                </td>
+                <td>|</td>
+
+                <td>
+                  <a href="matches2020.html?sprintId=312&type=big">[SL]2016 Recent Matches</a>
+                </td>
+
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10">
+            <table border="0" width="100%">
+              <tr>
+                <td> 
+
+                </td>
+              </tr>
+              <tr>
+                <td align="center" colspan="2">
+                  <img id="imgLogo" src="http://www.maproom.co.uk/0.gif" />
+                </td>
+              </tr>
+              <tr>
+                <td align="center" colspan="2">
+                  <h2 id="h2Head"></h2>
+                </td>
+              </tr>
+              <tr>
+                <td align="left">
+                  Season runs from <span id="spFromDate"></span> to <span id="spToDate"></span></td>
+                <td align="right">
+                  Last updated <span id="spUpdated"></span> </td>
+              </tr>
+              <tr>
+                <td> </td>
+              </tr>
+              <tr>
+                <td align="center" colspan="2"><span id="tdMessage"></span><br />
+                  <span id="Span1"> (Win = <span id="spWin"></span>pts, draw = <span id="spDraw"></span>, loss = <span
+                      id="spLoss"></span>)</span>
+                </td>
+              </tr>
+              <tr>
+                <td> </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10">
+            <select id="ddSprint" name="ddSprint">
+
+
+              <option value="313">[SL]2020 Dec-Jan '21/22</option>
+              <option value="312">[SL]2016 Dec-Jan '21/22</option>
+              <option value="311">[SL]2020 Sep-Oct '21</option>
+
+
+            </select>
+
+            <select id="ddRace" name="ddRace">
+              <option value="-1">All</option>
+              <option value="-3">Agile</option>
+              <option value="-5">Bash</option>
+              <option value="-2">Hybrid</option>
+
+              <option value="-4">Stunty/Ogres</option>
+              <option value="1">Amazon</option>
+              <option value="2">Chaos</option>
+              <option value="3">Chaos Dwarf</option>
+              <option value="64">Chaos Pact</option>
+
+              <option value="4">Dark Elves</option>
+              <option value="5">Dwarf</option>
+              <option value="24">Elf</option>
+
+              <option value="6">Goblin</option>
+              <option value="7">Halfling</option>
+              <option value="8">High Elf</option>
+              <option value="9">Human</option>
+              <option value="16">Khemri</option>
+
+              <option value="10">Lizardmen</option>
+              <option value="17">Necromantic</option>
+              <option value="11">Norse</option>
+              <option value="19">Nurgle</option>
+
+              <option value="12">Orc</option>
+              <option value="23">Ogre</option>
+              <option value="13">Skaven</option>
+              <option value="65">Slann</option>
+
+              <option value="14">Undead</option>
+              <option value="66">Underworld</option>
+
+              <option value="18">Vampire</option>
+              <option value="15">Wood Elf</option>
+
+            </select>
+
+            <button id="getSprint">Get Sprint</button>
+
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10">
+            <table id="tblGrid" width="100%" border="1" cellpadding="4" style="border-collapse:collapse;">
+
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</body>
+
+</html>
